@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #c5c7d6;
+}
+
+.h1 {
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  margin-bottom: 12px;
+}
+
+.search-field {
+  padding: 0.6rem;
+  font-size: 1rem;
+  color: #1e1e1e;
+  border-radius: 3px;
+  border: 1px black solid;
+  outline: none;
+}
+
+.result {
+  display: none;
+  margin-top: 1.25rem;
+  width: 32.5rem;
+  height: 25rem;
+  border-radius: 5px;
+  padding: 20px;
+  overflow-y: scroll;
+  background: #fff;
+}
+
+.result > h1 {
+  font-size: 40px;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: inline;
+}
+
+.result > p {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.phonetics {
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  background-color: #212cc2;
+  color: #fff;
+  margin-left: 1rem;
+  
+}
+
+.result > audio {
+  display: block;
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.wordmeaning {
+  font-weight: 500;
+}
+
+.synonyms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pills {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  background-color: #212cc2;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  margin: 5px 8px 5px 0;
+}
+
+.search-btn{
+  background-color: #212cc2;
+  width: 5rem;
+  height: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  outline: none;
+  border: 1px black solid;
+  margin-left: 1rem ;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  
+}
+
+audio{
+  margin-top: 0.75rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .result {
+    width: 100%;
+  }
+}
+
